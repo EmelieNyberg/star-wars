@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function MainNavigation() {
 	return (
-		<nav className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
+		<nav className="sticky top-0 z-50 bg-white/90 backdrop-blur p-3">
 			<div className="font-bold container mx-auto flex items-center justify-between">
 				<Link href="/"><Image src="/star_wars.png" width={150} height={50} alt="star wars logo" /></Link>
 				<ul className="flex gap-9 text-black">
