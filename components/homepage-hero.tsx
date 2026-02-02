@@ -1,6 +1,7 @@
 // components/homepage-hero.tsx
 import Image from "next/image";
 
+// This component renders the hero section on the homepage
 export default function HomepageHero() {
 	return (
 		<section className="relative w-full h-[95vh] overflow-hidden">

@@ -1,9 +1,13 @@
 // app/page.tsx
 
+// Import local character data from a JSON file
 import characterData from "@/data/characters.json";
+// Import the CharacterCard component to display each character
 import CharacterCard from "@/components/character-card";
+// Import the hero section shown at the top of the homepage
 import HomepageHero from "@/components/homepage-hero";
 
+// This is the main page component for the homepage (/)
 export default function Home() {
   // const characters = characterData.data
   const { data: characters } = characterData;

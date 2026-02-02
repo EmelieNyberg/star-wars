@@ -1,6 +1,7 @@
 // app/character/[id]/page.tsx
 
 import Image from "next/image";
+import Link from "next/link";
 import data from "@/data/characters.json"
 import { notFound } from "next/navigation";
 
@@ -15,8 +16,9 @@ export default async function CharacterPage({
     if (!character) notFound();
 
     return (
-        <main>
-            <article className="container mx-auto grid gap-10 md:grid-cols-2 md:items-center md:pt-10">
+        <main className="container mx-auto">
+            <Link href="/" className="text-white font-bold">⬅ Back</Link>
+            <article className="grid gap-10 md:grid-cols-2 md:items-center md:pt-10">
                 <div className="relative h-[50vh] w-full md:order-2">
                     <Image
                         src={character.image}
